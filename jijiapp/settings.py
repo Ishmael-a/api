@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'drf_yasg',
     'jiji',
 ]
 
@@ -83,7 +84,7 @@ WSGI_APPLICATION = 'jijiapp.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jiji_yusif',
+        'NAME': 'jiji-api',
         'USER': 'postgres',
         'PASSWORD': 'pass123',
         'HOST': 'localhost', 
