@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-c=g)7ll3r$bousoz992or6a6h^0j$3txg+!$vzt+txzp!1asn^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jiji-api.onrender.com', '127.0.0.1']
 
 
 # Application definition
