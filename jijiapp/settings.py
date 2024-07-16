@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import dj_database_url
 from pathlib import Path
 import os
 
@@ -91,6 +91,19 @@ DATABASES = {
         'PORT': 5432, 
     }
 }
+
+DATABASES["default"] = dj_database_url.parse("postgresql://ishmael_4449:MKGpw0a8BZsQ8L8NSMajZJYCyE68jJUd@dpg-cq8tiobv2p9s73cajdl0-a.oregon-postgres.render.com/jiji_api")
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'jiji_api',  # replace with your database name from Render
+#         'USER': 'ishmael_4449',  # replace with your username from Render
+#         'PASSWORD': 'MKGpw0a8BZsQ8L8NSMajZJYCyE68jJUd',  # replace with your password from Render
+#         'HOST': 'dpg-cq8tiobv2p9s73cajdl0-a.oregon-postgres.render',  # replace with your hostname from Render
+#         'PORT': '5432',  # typically 5432
+#     }
+# }
 
 
 # Password validation
